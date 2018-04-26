@@ -15,7 +15,7 @@ def InsertData(wifi,newwifi):
             COLstr = COLstr + ' ' + key + ColumnStyle + ','
             ROWstr = (ROWstr + '"%s"' + ',') % (newwifi.get(key))
 
-            # 判断表是否存在，存在执行try，不存在执行except新建表，再insert
+            #判斷該列表是否存在，存在將執行try，不存執行except(新建表)，再insert資料
         try:
             cur.execute("SELECT * FROM  %s" % (wifi))
             cur.execute("INSERT INTO %s VALUES (%s)" % (wifi, ROWstr[:-1]))
@@ -32,7 +32,6 @@ def InsertData(wifi,newwifi):
         "Mysql Error %d: %s" % (e.args[0], e.args[1])
 
 if __name__ == '__main__':
-  #  newwifi = {"mac": "ff:ff:cc:bb:aa:55", "team_name": "喜樂隊", "team_user": "彭文豪", "customer": "裴玉貞"}
     newwifi = { "team_user": "Bob", "team_name": "IT","mac": "11:22:33:44:55:66","customer": "Tom"}
     InsertData('wifi', newwifi)
 
