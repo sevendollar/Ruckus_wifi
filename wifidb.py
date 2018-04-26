@@ -10,8 +10,8 @@ def InsertData(wifi,newwifi):
 
         ColumnStyle = ' CHAR(20)'
 
-
-        for key in ["mac", "team_name", "team_user", "customer"]:
+	sql_looping_list = ["mac", "team_name", "team_user", "customer"]
+        for key in sql_looping_list:
             COLstr = COLstr + ' ' + key + ColumnStyle + ','
             ROWstr = (ROWstr + '"%s"' + ',') % (newwifi.get(key))
 
