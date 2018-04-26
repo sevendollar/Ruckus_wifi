@@ -33,6 +33,6 @@ def InsertData(wifi,newwifi):
 
 if __name__ == '__main__':
   #  newwifi = {"mac": "ff:ff:cc:bb:aa:55", "team_name": "喜樂隊", "team_user": "彭文豪", "customer": "裴玉貞"}
-    newwifi = { "team_user": "彭豪", "team_name": "喜樂隊","mac": "ff:ff:cc:bb:aa:10","customer": "裴玉貞"}
+    newwifi = { "team_user": "Bob", "team_name": "IT","mac": "11:22:33:44:55:66","customer": "Tom"}
     InsertData('wifi', newwifi)
 
