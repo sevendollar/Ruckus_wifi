@@ -3,7 +3,7 @@ import pymysql
 
 def InsertData(wifi,newwifi):
     try:
-        conn = pymysql.connect(host='localhost', user='royce', password='cvl89804142', port=3306, db='ruckus', charset="utf8")
+        conn = pymysql.connect(host='localhost', user='USER', password='PASSWORD', port=3306, db='DB', charset="utf8")
         cur = conn.cursor()
         COLstr = ''  # 列的字段
         ROWstr = ''  # 行字段
