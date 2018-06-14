@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+
 import pymysql
 
 def InsertData(wifi,newwifi):
