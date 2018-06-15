@@ -30,7 +30,7 @@ def InsertData(wifi,newwifi):
     except pymysql.Error as e:
         print
         "Mysql Error %d: %s" % (e.args[0], e.args[1])
-
+'''
 if __name__ == '__main__':
     newwifi = { "team_user": "Bob", "team_name": "IT","mac": "11:22:33:44:55:66","customer": "Tom"}
     InsertData('wifi', newwifi)
